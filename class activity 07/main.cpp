@@ -6,9 +6,22 @@
 //
 
 #include <iostream>
+#include <string>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    // Array to store the names
+    string names[3];
+
+    // Asking the user for three names
+    for(int i = 0; i < 3; i++) {
+        cout << "Enter name " << i + 1 << ": ";
+        getline(cin, names[i]);
+    }
+
+    // Printing the first name
+    cout << "\nThe first name is: " << names[0] << endl;
+
     return 0;
 }
+
